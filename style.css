@@ -1,0 +1,57 @@
+body {
+    margin: 0; font-family: 'Segoe UI', sans-serif; background: #fff8f4; color: #333;
+  }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 2rem; background: #ffe0eb;
+  }
+  .logo {
+    display: flex; align-items: center;
+  }
+  .logo img { width: 40px; margin-right: 10px; }
+  .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+  .nav-links a {
+    text-decoration: none; color: #222; font-weight: bold;
+  }
+  .nav-links a.active { color: #d6336c; }
+  .menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; }
+  
+  .hero {
+    background: #ffc2d1;
+    padding: 5rem 2rem; text-align: center; color: #fff;
+  }
+  .hero-content {
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #000;
+  }
+  .btn, .btn-outline {
+    display: inline-block; margin: 1rem 0.5rem; padding: 0.75rem 1.5rem;
+    border-radius: 5px; text-decoration: none; font-weight: bold;
+  }
+  .btn { background: #ff8fab; color: white; }
+  .btn-outline { border: 2px solid #ff8fab; color: #ff8fab; background: transparent; }
+  
+  .signature {
+    text-align: center; padding: 4rem 2rem;
+  }
+  .cards {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem; margin: 2rem 0;
+  }
+  .card {
+    background: white; border: 1px solid #ffdce0;
+    padding: 1.5rem; border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  footer {
+    text-align: center; padding: 1rem; background: #ffe0eb;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; background: #ffe0eb; padding: 1rem; position: absolute; right: 1rem; top: 60px; }
+    .nav-links.showing { display: flex; }
+    .menu-toggle { display: block; }
+  }
